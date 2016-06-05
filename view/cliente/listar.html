@@ -1,0 +1,34 @@
+<div class="row div-listas">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="btn-group">
+			<button class="btn btn-default btn_novo">
+				Novo
+				<span class="glyphicon glyphicon-plus"></span>
+			</button>
+			<button class="btn btn-default btn_refresh">
+				<span class="glyphicon glyphicon-refresh"></span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="row div-listas">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<table class="table table-striped tbl_cliente">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr template-row="cliente" style="display: none;">
+					<td template-field="nome">{nome}</td>
+					<td class="text-right">
+						<button class="btn btn-default" template-button="btn_editar">Editar</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
